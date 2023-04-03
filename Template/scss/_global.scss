@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @extend %basis-400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+// .hidden {
+//     overflow: hidden;
+// }
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+    padding: 0 15px;
+}

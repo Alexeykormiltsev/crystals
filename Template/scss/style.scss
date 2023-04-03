@@ -1,0 +1,142 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header {
+    .top {
+        padding: 16px 0 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+            @extend %basis-500;
+            text-transform: uppercase;
+            line-height: 16px;
+        }
+
+        .box {
+            display: flex;
+            gap: 32px;
+        }
+    }
+
+    &__body {
+        padding: 180px 0 50px;
+        background-image: url(../img/header/header-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 1px solid #EAC1BF;
+    }
+
+    &__body-title {
+        @extend %ogg-400;
+        text-align: center;
+        font-size: 117px;
+        line-height: 120px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-left: 1150px;
+        background: #000;
+        font-size: 20px;
+        line-height: 26px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 50px;
+        border-radius: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+
+    .running-line {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-bottom: 1px solid #EAC1BF;
+
+        &__text {
+            @extend %roboto-400;
+            font-size: 24px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            animation: text 14s infinite linear;
+
+            span {
+                // очередной кривой макет
+                background-image: linear-gradient(55.17deg, #b340a9 15.27%, #a9c028 85.1%);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+            &:after {
+                content: " Crystals.com Crystals.com Crystals.com Crystals.com Crystals.com Crystals.com Crystals.com"
+            }
+        }
+
+        @keyframes text {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(-50%)
+            }
+        }
+    }
+}
+
+.description {
+    padding: 70px 30px 150px;
+    background: #F5E4E3;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        width: 50%;
+    }
+
+    &__text {
+        @extend %ogg-400;
+        font-size: 48px;
+        line-height: 68px;
+        margin-bottom: 80px;
+    }
+
+    &__link {
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 14px 36px;
+        background: #000;
+        color: #fff;
+        border-radius: 32px;
+        transition: all .3s;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}
+
+
+
+
+@import 'media';

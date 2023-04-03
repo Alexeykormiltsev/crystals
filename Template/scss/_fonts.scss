@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'BasisGrotesquePro-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('BasisGrotesquePro-Regular'),
+        url('../fonts/BasisGrotesquePro-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BasisGrotesquePro-Medium', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    src: local('BasisGrotesquePro-Medium'),
+        url('../fonts/BasisGrotesquePro-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('Roboto-Regular'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    // шрифт в макете указан не верно
+    font-family: 'Ogg-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('Ogg-Regular'),
+        url('../fonts/Ogg-Regular.woff2') format('woff2');
+    font-display: swap;
+}
