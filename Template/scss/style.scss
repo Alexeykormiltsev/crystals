@@ -395,12 +395,38 @@
 
     &__item {
         text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 112px;
+            height: 112px;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background: rgba(185, 86, 187, 0.35);
+            filter: blur(25px);
+            border-radius: 31px;
+            transition: all .3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__item {
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
     }
 
     &__img {
         margin-bottom: 26px;
         object-fit: contain;
-        // не понял, что за эффект с картинкой должен случиться
     }
 
     &__item-title {
@@ -649,10 +675,16 @@
     &__bottom-copy {
         margin-top: 25px;
         font-size: 12px;
+        display: block;
+    }
+
+    &__bottom-copy--text {
+        display: inline-block;
         margin-right: 16px;
     }
 
     .policy {
+
         &__link {
             @extend %basis-400;
             color: #000;
